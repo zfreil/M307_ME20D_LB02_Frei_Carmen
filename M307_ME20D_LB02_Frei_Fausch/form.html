@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon-180x180.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon-32x32.ico">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <meta name="msapplication-square310x310logo" content="assets/images/favicon/mstile-310x310.png">
+    
+    <title>Newsletter | Party Hub!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="./assets/js/Valiadte.js"></script>
+</head>
+<body class="team">
+
+<header>
+    <a class="header__home" href="index.html">Party Hub!</a>
+
+    <div class="burger-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav__current">
+                <a href="form.html">Newsletter</a>
+            </li>
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="team.html">Team</a>
+            </li>
+        </ul>
+    </nav>
+
+    <a href="404.html" class=" btn btn-secondary header__download button button--light button--small">
+        Jetzt herunterladen
+    </a>
+</header>
+
+<main>
+
+    <h1 class="newsletter">Newsletter</h1>
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Newsletter</li>
+        </ol>
+      </nav>
+      
+
+<p class="beschreibung"> Wir bieten Ihnen eine kostenlosen Newsletter an welcher sie laufend über die Dinge informiert, die sie interessieren. Dieser Newsletter ist jederzeit Kündbar und dient nur dazu sie auf dem laufenden zu halten, damit sie nichts verpassen.</p>
+
+
+<form class="form" method="get" onsubmit="return validateFrom()" name="myForm">
+
+<p class="name">
+<label>Name
+<input type="text" name="name">
+</label> 
+</p>
+
+<p class="email">
+<label>Email 
+<input type="email" name="email_address">
+</label>
+</p>
+
+
+<p class="gebu">
+    <label>Geburtsdatum
+    <input type="date" name="GD">
+    </label>
+    </p>
+	
+
+<p>
+<label class="labl2"> <p class="aufm">Wie sind Sie auf uns aufmerksam geworden?</p>
+<select id="auswahl" name="auswahl">
+<option value="auswahl">Option Wählen</option>
+<option value="print">Printmedien</option>
+<option value="social_media" >Social Media</option>
+<option value="freunde" >Freunde und Verwandte</option>
+<option value="tv" >Fernsehen</option>
+</select>
+</label> 
+</p>
+
+
+
+    <fieldset>
+    <label class="labl"> <p class="aufm2"> Dürfen wir Ihre Daten zu Werbezwecken benutzen?</p></label>
+    <div class="werbezweck">
+        <p><label class="choice"> <input type="radio" name="Werbung" id="ja" value="Ja"> -Ja</label></p>
+        <p><label class="choice"> <input type="radio" name="Werbung" id="nein" value="Nein"> -Nein </label></p>
+    </div>
+    </fieldset>
+    
+
+
+<div class="textfield">
+<p>
+<label> Anmerkungen/Wünsche
+<textarea name="comments" maxlength="300"></textarea>
+</label>
+</p>
+</div>
+
+<fieldset>
+    <p> <label class="choice"> <input class="checkbox" type="checkbox" id="agb" value="baby"> Ich akzeptiere die AGB </label></p>
+    </fieldset>
+
+<p><button class="nbtn">Newsletter Abonnieren</button></p>
+
+</form>
+
+</main>
+
+<footer>
+    <div>
+        <h4>Party Hub!</h4>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="privacy.html">Datenschutz</a>
+                </li>
+                <li>
+                    <a href="contact.html">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <h4>Finde uns</h4>
+        <a href="https://www.instagram.com/instagram/" class=" btn btn-warning button button--round">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/facebook/" class=" btn btn-warning button button--round">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/youtube/" class=" btn btn-warning button button--round">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>
+    <div>
+        <h4>Adressen</h4>
+            <address>
+                Party Hub!<br>
+                Seestrasse 69<br>
+                8000 Zürich
+            </address>
+            <br>
+            <a href="tel:+41313336688">+41 22 333 44 55</a>
+            <a href="mailto:info@cheersmate.ch">info@partyhub.ch</a>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
